@@ -1,0 +1,56 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing:border-box;
+}
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+body{
+	font: 14px/1.5 "Microsoft Yahei","WenQuanYi Micro Hei",sans-serif;
+	-webkit-overflow-scrolling:touch; /*流畅滚动手机端*/
+}
+.action{
+	opacity: 0;
+}
+.action:hover{
+	opacity: 1;
+}
+.customcover{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.customform{
+	max-width: 600px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 20px;
+	margin-top: 10vh;
+}
+.formani-enter {
+  opacity: 0.01;
+}
+
+.formani-enter.formani-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.formani-leave {
+  opacity: 1;
+}
+
+.formani-leave.formani-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
